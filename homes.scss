@@ -1,0 +1,309 @@
+// // Place all the styles related to the homes controller here.
+// // They will automatically be included in application.css.
+// // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+// .hero-full-screen {
+//   height: 85vh;
+//   display: -webkit-flex;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-flex-direction: column;
+//       -ms-flex-direction: column;
+//           flex-direction: column;
+//   -webkit-align-items: center;
+//       -ms-flex-align: center;
+//           align-items: center;
+//   -webkit-justify-content: space-between;
+//       -ms-flex-pack: justify;
+//           justify-content: space-between;
+//   background: url("https://images.pexels.com/photos/378273/pexels-photo-378273.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+//   background-size: cover;
+// }
+
+// .hero-full-screen .middle-content-section {
+//   text-align: center;
+//   color: #fefefe;
+// }
+
+// .hero-full-screen .top-content-section {
+//   width: 100%;
+// }
+
+// .hero-full-screen .bottom-content-section {
+//   padding: 1rem;
+// }
+
+// .hero-full-screen .bottom-content-section svg {
+//   height: 3.75rem;
+//   width: 3.75rem;
+//   fill: #fefefe;
+// }
+
+// .hero-full-screen .top-bar {
+//   background: transparent;
+// }
+
+// .hero-full-screen .top-bar .menu {
+//   background: transparent;
+// }
+
+// .hero-full-screen .top-bar .menu-text {
+//   color: #fefefe;
+// }
+
+// .hero-full-screen .top-bar .menu li {
+//   display: -webkit-flex;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-align-items: center;
+//       -ms-flex-align: center;
+//           align-items: center;
+// }
+
+// .hero-full-screen .top-bar .menu a {
+//   color: #fefefe;
+//   font-weight: bold;
+// }
+
+
+
+
+// .hero-section {
+//   background: url("https://storage.cloud.google.com/miregul8/transformation-image.jpg?orgonly=true&supportedpurview=organizationId") 50% no-repeat;
+//   background-size: cover;
+//   height: 60vh;
+//   text-align: center;
+//   display: -webkit-flex;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-align-items: center;
+//       -ms-flex-align: center;
+//           align-items: center;
+//   -webkit-justify-content: center;
+//       -ms-flex-pack: center;
+//           justify-content: center;
+// }
+
+// .hero-section .hero-section-text {
+//   color: #fefefe;
+//   text-shadow: 1px 1px 2px #0a0a0a;
+// }
+
+
+
+// .card-profile-stats {
+//   border: 1px solid #cacaca;
+//   margin: 0 0 1.25rem;
+//   padding: 1.25rem;
+//   background: #fefefe;
+// }
+
+// .card-profile-stats .card-profile-stats-intro {
+//   text-align: center;
+// }
+
+// .card-profile-stats .card-profile-stats-intro .card-profile-stats-intro-pic {
+//   border-radius: 50%;
+//   margin: 0 0 1.25rem;
+// }
+
+// .card-profile-stats .card-profile-stats-intro .card-profile-stats-intro-content p:last-child {
+//   margin: 0;
+// }
+
+// .card-profile-stats .card-profile-stats-container {
+//   text-align: center;
+// }
+
+// .card-profile-stats .card-profile-stats-container .card-profile-stats-statistic {
+//   margin: 0 0 1.25rem;
+// }
+
+// .card-profile-stats .card-profile-stats-container .card-profile-stats-statistic p:last-child {
+//   margin: 0;
+// }
+
+// .card-profile-stats .card-profile-stats-more .card-profile-stats-more-link {
+//   margin: 0;
+//   text-align: center;
+//   font-size: 1.5rem;
+//   color: #0a0a0a;
+//   padding: 0.5rem;
+//   cursor: pointer;
+// }
+
+// // .card-profile-stats .card-profile-stats-more .card-profile-stats-more-content {
+ 
+// // }
+
+
+// .contact-us-section {
+//   padding: 2rem;
+//   background: #fefefe;
+// }
+
+// .contact-us-section .contact-us-section-left {
+//   padding-right: 2rem;
+//   border-bottom: 2px solid #e6e6e6;
+//   padding-bottom: 2rem;
+//   margin-bottom: 2rem;
+// }
+
+// @media print, screen and (min-width: 40em) {
+//   .contact-us-section .contact-us-section-left {
+//     border-right: 1px solid #e6e6e6;
+//     border-bottom: 0;
+//     padding-bottom: 0;
+//     margin-bottom: 0;
+//   }
+// }
+
+// .contact-us-section .contact-us-section-right {
+//   padding-left: 2rem;
+// }
+
+// @media print, screen and (min-width: 40em) {
+//   .contact-us-section .contact-us-section-right {
+//     border-left: 1px solid #e6e6e6;
+//   }
+// }
+
+// .contact-us-section .contact-us-header {
+//   margin-bottom: 2rem;
+// }
+
+// @media screen and (min-width: 40em) and (max-width: 74.9375em) {
+//   .contact-us-section .contact-us-header {
+//     font-size: 32px;
+//   }
+// }
+
+// .contact-us-section .responsive-embed {
+//   margin-bottom: 0;
+//   padding-bottom: 55%;
+// }
+
+// .contact-us-form input[type=text],
+// .contact-us-form input[type=email],
+// .contact-us-form textarea {
+//   margin-bottom: 1.5rem;
+// }
+
+// .contact-us-form-actions {
+//   display: -webkit-flex;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-align-items: center;
+//       -ms-flex-align: center;
+//           align-items: center;
+//   -webkit-justify-content: space-between;
+//       -ms-flex-pack: justify;
+//           justify-content: space-between;
+// }
+
+// .contact-us-form-actions input[type=submit] {
+//   border-radius: 5000px;
+//   padding-left: 2rem;
+//   padding-right: 2rem;
+// }
+
+// .contact-us-form-actions .contact-us-file-button {
+//   background: transparent;
+//   color: #8a8a8a;
+// }
+
+// .contact-us-list {
+//   list-style-type: none;
+//   margin: 0;
+// }
+
+// .contact-us-list li a {
+//   color: #0a0a0a;
+// }
+
+// .contact-us-list li::before {
+//   margin-right: 2rem;
+//   font-size: 2rem;
+//   vertical-align: middle;
+//   color: #8a8a8a;
+//   font-family: 'FontAwesome';
+// }
+
+// .contact-us-list .address::before {
+//   content: '\f041';
+//   margin-left: 0.4rem;
+//   margin-right: 2.3rem;
+// }
+
+// .contact-us-list .email::before {
+//   content: '\f003';
+// }
+
+// .contact-us-list .phone::before {
+//   content: '\f098';
+// }
+
+
+// @media print, screen and (min-width: 64em) {
+//   .card-profile-stats .card-profile-stats-intro {
+//     -webkit-align-items: center;
+//         -ms-flex-align: center;
+//             align-items: center;
+//     display: -webkit-flex;
+//     display: -ms-flexbox;
+//     display: flex;
+//     -webkit-flex-direction: row;
+//         -ms-flex-direction: row;
+//             flex-direction: row;
+//     -webkit-flex-wrap: wrap;
+//         -ms-flex-wrap: wrap;
+//             flex-wrap: wrap;
+//     text-align: left;
+//   }
+//   .card-profile-stats .card-profile-stats-intro .card-profile-stats-intro-pic {
+//     margin: 0 1.25rem 0 0;
+//     max-width: 250px;
+//   }
+//   .card-profile-stats .card-profile-stats-container {
+//     display: -webkit-flex;
+//     display: -ms-flexbox;
+//     display: flex;
+//     -webkit-justify-content: space-around;
+//         -ms-flex-pack: distribute;
+//             justify-content: space-around;
+//   }
+// }
+
+
+
+
+// #brand-heading{
+// 	font-style: italic;
+//   text-align: center;
+// }
+
+// h5{
+// 	text-align: center;   
+// }
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background: url("https://images.pexels.com/photos/378273/pexels-photo-378273.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
