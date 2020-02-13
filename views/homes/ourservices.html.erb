@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<div class="grid-x align-top align-middle grid-margin-x grid-padding-x">
+<% @services.each do |service| %>
+	
+	<div class="cell grid-x small-4 self-align-middle grid-margin-x">
+		<div class="grid-y align-top align-middle grid-margin-x grid-padding-y">
+			<div class="cell flex-child-auto"><%= image_tag(service.servicephoto.variant(resize_to_limit: [500,500])) %></div>
+			<div class="cell flex-child-auto"><h5><b><%= service.name%></b></h5></div>
+			<div class="cell flex-child-auto"><%= service.overview%></div>
+		</div>
+				
+ 	</div>
+	
+<% end%>
+
+</div>
+ <script>
+      $(document).foundation();
+    </script>

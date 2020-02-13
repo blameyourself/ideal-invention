@@ -1,0 +1,28 @@
+<%= form_with(model: linkstofile, local: true) do |form| %>
+  <% if linkstofile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(linkstofile.errors.count, "error") %> prohibited this linkstofile from being saved:</h2>
+
+      <ul>
+        <% linkstofile.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :filetoshare%>
+	 <%= form.file_field :filetoshare%>
+  </div>
+  
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+<h2><div id="brand-heading"><center>Our consultants have worked transforming</center></div></h2>	
+<div class="grid-x align-middle align-top grid-padding-x grid-padding-y">
+<% @brands.each do |brand| %>
+	<div class="cell small-4 align-self-top">
+		<div class="grid-y align-top align-middle">
+			<div class="cell flex-child-auto"><img class="thumbnail" src='<%= rails_blob_path(brand.brandphoto) %>'></div>
+			<div class="cell flex-child-auto"><h5><%= brand.name%></h5></div>
+			<div class="cell flex-child-auto"><center><%= number_with_delimiter(brand.size, :delimiter => ',')%> People</div>
+		</div>
+	</div>
+<% end%>
+
+</div>
+
+ <script>
+      $(document).foundation();
+    </script>

@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Linkstofiles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @linkstofiles.each do |linkstofile| %>
+      <tr>
+        <td><%= linkstofile.name %></td>
+        <td><%= link_to 'Show', linkstofile %></td>
+        <td><%= link_to 'Edit', edit_linkstofile_path(linkstofile) %></td>
+        <td><%= link_to 'Destroy', linkstofile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Linkstofile', new_linkstofile_path %>

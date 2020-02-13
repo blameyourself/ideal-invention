@@ -1,0 +1,79 @@
+<%= form_with(model: coach, local: true) do |form| %>
+  <% if coach.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(coach.errors.count, "error") %> prohibited this coach from being saved:</h2>
+
+      <ul>
+        <% coach.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :vacant, 'Is this position vacant?' %>
+    <%= form.check_box :vacant %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :dayrate%>
+    <%= form.text_field :dayrate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :coachphoto %>
+	 <%= form.file_field :coachphoto%>
+  </div>
+  <div class="field">
+    <%= form.label :shortdesc %>
+    <%= form.text_field :shortdesc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :coachtype %>
+    <%= form.text_field :coachtype %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand1 %>
+	 <%= form.file_field :brand1%>
+  </div>
+  
+  <div class="field">
+    <%= form.label :brand2 %>
+	 <%= form.file_field :brand2%>
+  </div>
+  
+  <div class="field">
+    <%= form.label :brand3 %>
+	 <%= form.file_field :brand3%>
+  </div>
+  
+  
+  <div class="field">
+    <%= form.label :brand4 %>
+	 <%= form.file_field :brand4%>
+  </div>
+  
+  
+  <div class="field">
+    <%= form.label :brand5%>
+	 <%= form.file_field :brand5%>
+  </div>
+  
+  
+  <div class="field">
+    <%= form.label :brand6 %>
+	 <%= form.file_field :brand6%>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

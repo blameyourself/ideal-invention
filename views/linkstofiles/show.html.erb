@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @linkstofile.name %>
+</p>
+<p>
+  <strong>Link to File:</strong>
+
+  <%= link_to 'Download ' + @linkstofile.name,rails_blob_path(@linkstofile.filetoshare, disposition: "attachment") if  @linkstofile.filetoshare.attached? %>
+  
+  
+
+</p>
+
+
+<%#= link_to 'Edit', edit_linkstofile_path(@linkstofile) %> |
+<%#= link_to 'Back', linkstofiles_path %>

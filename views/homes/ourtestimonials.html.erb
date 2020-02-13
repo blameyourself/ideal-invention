@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="grid-x align-top align-middle grid-margin-x grid-padding-x">
+
+<% @testimonials.each do |testimonial| %>
+	<div class="cell grid-x small-4 self-align-middle grid-margin-x">
+		<div class="grid-y align-top align-middle grid-margin-x">
+			<div class="cell flex-child-auto"><%= image_tag(testimonial.testimonialphoto.variant(resize_to_limit: [1000,1000]))%></div>
+      		<div class="cell flex-child-auto"><h3><%= testimonial.name%></h3></div>
+      		<div class="cell flex-child-auto"><small>CTO - Wobygong</small></div>
+      		<div class="cell flex-child-auto">25 Days</div>
+      		<div class="cell flex-child-auto">Time to Ship Reduced By</div>
+      		<div class="cell flex-child-auto">125 people</div>
+      		<div class="cell flex-child-auto">People able to be reallocated to other work</div>
+      	    <div class="cell flex-child-auto">88 million</div>
+      	    <div class="cell flex-child-auto">Cost reduced</div>
+      	    <div class="cell flex-child-auto">After receiving coaching from ADD. Our company was able to become customer centric and ship product out the door daily. This enabled the company to dominate our market space.</div>
+    </div> 
+</div>
+<% end%>
+</div>
+
+<script>
+  $(document).foundation();
+</script>
